@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="SOK PHANIT — Mechatronic Engineer, Power Electronics, EV Inverter R&D, PCB Design, Hardware Testing and AI.">
+<title>SOK PHANIT | Mechatronic Engineer</title>
+<style>
+:root{
+  --bg:#07111f; --bg2:#0b1728; --card:#0e1d31; --line:#1d3552;
+  --text:#eef5ff; --muted:#9fb2c9; --accent:#62d8ff; --accent2:#8b7cff;
+  --max:1160px; --radius:18px;
+}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:linear-gradient(180deg,var(--bg),#091727 55%,#07111f);color:var(--text);line-height:1.65}
+a{color:inherit;text-decoration:none}
+.container{width:min(var(--max),92%);margin:auto}
+nav{position:sticky;top:0;z-index:20;background:rgba(7,17,31,.86);backdrop-filter:blur(16px);border-bottom:1px solid rgba(98,216,255,.12)}
+.navin{display:flex;align-items:center;justify-content:space-between;min-height:70px}
+.logo{font-weight:800;letter-spacing:.12em}
+.logo span{color:var(--accent)}
+.links{display:flex;gap:22px;font-size:.9rem;color:var(--muted)}
+.links a:hover{color:var(--accent)}
+.hero{padding:105px 0 85px;display:grid;grid-template-columns:1.25fr .75fr;gap:55px;align-items:center}
+.kicker{color:var(--accent);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.78rem}
+h1{font-size:clamp(3rem,7vw,5.8rem);line-height:.98;margin:16px 0 20px;letter-spacing:-.055em}
+.hero h2{font-size:1.25rem;color:#d8e6f7;font-weight:500;margin:0 0 24px}
+.hero p{color:var(--muted);max-width:720px;font-size:1.05rem}
+.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{padding:12px 18px;border:1px solid var(--line);border-radius:999px;font-weight:700;font-size:.92rem}
+.btn.primary{background:var(--accent);color:#04101c;border-color:var(--accent)}
+.btn:hover{transform:translateY(-1px)}
+.profile-photo{
+  width:210px;height:260px;object-fit:cover;object-position:center top;
+  border-radius:20px;border:1px solid var(--line);
+  display:block;margin:0 auto 24px;
+  background:#fff;
+}
+.about-layout{display:grid;grid-template-columns:240px 1fr;gap:28px;align-items:start}
+.about-photo-card{text-align:center}
+@media(max-width:850px){.about-layout{grid-template-columns:1fr}.profile-photo{width:180px;height:225px}}
+.hero-card{background:linear-gradient(145deg,#10243d,#0a1728);border:1px solid var(--line);border-radius:26px;padding:28px;box-shadow:0 25px 70px rgba(0,0,0,.25)}
+.stat{display:flex;justify-content:space-between;padding:17px 0;border-bottom:1px solid var(--line)}
+.stat:last-child{border-bottom:0}
+.stat b{font-size:1.35rem}.stat span{color:var(--muted);text-align:right}
+section{padding:85px 0;border-top:1px solid rgba(159,178,201,.08)}
+.section-title{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:30px}
+.section-title h2{font-size:2.2rem;margin:0;letter-spacing:-.03em}
+.section-title p{margin:0;color:var(--muted);max-width:560px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:rgba(14,29,49,.78);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+.card h3{margin:0 0 8px;font-size:1.12rem}
+.card p,.card li{color:var(--muted)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:15px}
+.tag{font-size:.76rem;border:1px solid #274564;color:#b9d7ee;border-radius:999px;padding:4px 9px}
+.timeline{display:grid;gap:16px}
+.item{display:grid;grid-template-columns:180px 1fr;gap:30px;padding:24px 0;border-bottom:1px solid var(--line)}
+.item:last-child{border-bottom:0}
+.date{color:var(--accent);font-weight:700;font-size:.9rem}
+.item h3{margin:0 0 4px}.item .org{color:#dbe8f6;font-weight:600}
+.item ul{margin:12px 0 0;padding-left:18px}
+.pub{display:grid;grid-template-columns:1fr auto;gap:18px;align-items:start}
+.pub .year{color:var(--accent);font-weight:800}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.contact-card{padding:28px;border:1px solid var(--line);border-radius:var(--radius);background:var(--card)}
+.contact-card a{color:var(--accent)}
+footer{padding:35px 0;color:var(--muted);font-size:.85rem;text-align:center}
+@media(max-width:850px){
+ .hero{grid-template-columns:1fr;padding-top:75px}
+ .grid{grid-template-columns:1fr 1fr}
+ .links{display:none}
+ .item{grid-template-columns:1fr;gap:5px}
+ .contact{grid-template-columns:1fr}
+}
+@media(max-width:560px){.grid{grid-template-columns:1fr}h1{font-size:3.4rem}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container navin">
+    <a class="logo" href="#home">SOK <span>PHANIT</span></a>
+    <div class="links">
+      <a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a>
+      <a href="#research">Research</a><a href="#review">Review Service</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main id="home">
+<section class="hero container" style="border-top:0">
+  <div>
+    <div class="kicker">Mechatronic Engineer • Power Electronics • R&D • AI</div>
+    <h1>SOK<br>PHANIT</h1>
+    <h2>Hardware Design · EV Inverter · PCB · Protection · Testing · Reliability</h2>
+    <p>
+      Mechatronic Engineer from Cambodia with hands-on experience in power electronics,
+      HV EV inverter hardware, PCB design, circuit simulation, protection functions,
+      hardware testing, reliability analysis and AI-based fault diagnosis.
+    </p>
+    <div class="buttons">
+      <a class="btn primary" href="#experience">View Experience</a>
+      <a class="btn" href="Resume.pdf" target="_blank">View Resume PDF</a>
+      <a class="btn" href="Portfolio.pdf" target="_blank">View Portfolio PDF</a>
+    </div>
+  </div>
+  <div class="hero-card">
+    <div class="stat"><b>150 kW</b><span>Next-Generation<br>EV Inverter</span></div>
+    <div class="stat"><b>4.43 / 4.5</b><span>M.S. GPA<br>Gyeongsang National University</span></div>
+    <div class="stat"><b>3.88 / 4.0</b><span>B.S. GPA<br>First-Class Honors</span></div>
+    <div class="stat"><b>SCI(E)</b><span>Journal Publications<br>& Patents</span></div>
+  </div>
+</section>
+
+<section id="about">
+<div class="container">
+  <div class="section-title">
+    <h2>About Me</h2>
+    <p>Mechatronic Engineer specializing in power electronics, EV inverter hardware, PCB design, testing and reliability.</p>
+  </div>
+
+  <div class="about-layout">
+    <div class="card about-photo-card">
+      <img class="profile-photo" src="assets/profile.jpg" alt="SOK PHANIT professional photo">
+      <h3>SOK PHANIT</h3>
+      <p>Mechatronic Engineer</p>
+    </div>
+
+    <div class="grid">
+      <div class="card"><h3>Power Electronics</h3><p>EV inverters, motor drivers, AC/DC, DC/DC and DC/AC converters, protection circuits and reliability analysis.</p></div>
+      <div class="card"><h3>Hardware Engineering</h3><p>PCB design, component and footprint review, hardware modification, debugging, validation and performance evaluation.</p></div>
+      <div class="card"><h3>Research & AI</h3><p>SCI(E) publications, patents, reliability research, LSTM life prediction and computer-vision research on Jetson Nano.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="experience">
+<div class="container">
+  <div class="section-title"><h2>Professional Experience</h2><p>Hands-on engineering roles from PCB development and laboratory research to EV inverter R&D.</p></div>
+  <div class="timeline">
+    <div class="item">
+      <div class="date">Oct 2025 — Present</div>
+      <div><h3>R&D H/W Engineer</h3><div class="org">Hyowon PowerTech · Busan, South Korea</div>
+        <ul>
+          <li>HV EV inverter circuit and PCB design assistance.</li>
+          <li>PCB, footprint and component review / modification.</li>
+          <li>EV inverter hardware performance testing and validation.</li>
+          <li>Protection function design/testing: OCP, OVP, DESAT and short-circuit.</li>
+          <li>H/W fault diagnosis, trigger-protection reporting and debugging.</li>
+          <li>DPT-based switching and EV inverter power-loss analysis.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="item">
+      <div class="date">Aug 2023 — Aug 2025</div>
+      <div><h3>Full-Time Researcher</h3><div class="org">Power Electronics & Reliability Lab · Gyeongsang National University</div>
+        <ul>
+          <li>Designed voltage-clamping circuits for DC solid-state circuit breakers.</li>
+          <li>Performed reliability analysis of converter systems.</li>
+          <li>Designed PCB prototypes using Altium Designer.</li>
+          <li>Developed AI-based life prediction using LSTM and programmed DSP/MCUs.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="item">
+      <div class="date">Jul 2021 — Nov 2021</div>
+      <div><h3>Junior PCB Design Intern</h3><div class="org">Survitech Co., Ltd. · Thailand</div>
+        <ul>
+          <li>Developed PCB prototypes using Altium Designer.</li>
+          <li>Programmed touchscreen HMI interfaces.</li>
+          <li>Programmed microcontrollers using Arduino IDE and MicroPython.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="projects">
+<div class="container">
+  <div class="section-title"><h2>Projects</h2><p>Selected engineering and research projects.</p></div>
+  <div class="grid">
+    <div class="card"><h3>150 kW Next-Generation EV Inverter</h3><p>HV EV inverter development with hardware/software integration, advanced protection, diagnostics and low-loss SiC switching.</p><div class="tags"><span class="tag">EV Inverter</span><span class="tag">SiC</span><span class="tag">Protection</span><span class="tag">H/W</span></div></div>
+    <div class="card"><h3>DC Solid-State Circuit Breaker</h3><p>Voltage-clamping and surge-voltage reduction research using MOV-based protection and crowbar clamping circuits.</p><div class="tags"><span class="tag">SSCB</span><span class="tag">MOV</span><span class="tag">Thyristor</span><span class="tag">PCB</span></div></div>
+    <div class="card"><h3>Hybrid Power Converter Reliability</h3><p>Reliability analysis of a 5 kW, 220 VAC hybrid converter integrating PV, ESS and PEMFC sources.</p><div class="tags"><span class="tag">Reliability</span><span class="tag">PFC</span><span class="tag">Converter</span></div></div>
+    <div class="card"><h3>AI Life Prediction</h3><p>LSTM-based lifespan prediction for power-management applications with sensor-failure considerations.</p><div class="tags"><span class="tag">Python</span><span class="tag">LSTM</span><span class="tag">AI</span></div></div>
+    <div class="card"><h3>Jetson Nano Computer Vision</h3><p>Deep-learning research focused on improving image-classification FPS performance on NVIDIA Jetson Nano.</p><div class="tags"><span class="tag">PyTorch</span><span class="tag">Deep Learning</span><span class="tag">Jetson Nano</span></div></div>
+    <div class="card"><h3>PCB Development</h3><p>Designed prototype boards for experimental power-electronics research using Altium Designer.</p><div class="tags"><span class="tag">Altium</span><span class="tag">PCB</span><span class="tag">Hardware</span></div></div>
+  </div>
+</div>
+</section>
+
+<section id="research">
+<div class="container">
+  <div class="section-title">
+    <h2>Research & Publications</h2>
+    <p>My journal articles, conference papers and research publications. Click <b>View Paper</b> to open the publication page or DOI.</p>
+  </div>
+
+  <h3 style="margin:35px 0 15px;color:var(--accent)">Journal Papers</h3>
+  <div class="timeline">
+
+    <div class="card pub">
+      <div>
+        <h3>Analysis and Implementation of the Crowbar Clamping Circuit for Surge Voltage Reduction in the DC Solid-State Circuit Breaker</h3>
+        <p><b>IEEE Access</b>, Vol. 12, pp. 149018–149031, 2024 · SCI(E)</p>
+        <p>DOI: 10.1109/ACCESS.2024.3476123</p>
+        <a class="btn" href="https://scholarworks.gnu.ac.kr/handle/sw.gnu/74648" target="_blank">View Paper ↗</a>
+        <a class="btn" href="https://doi.org/10.1109/ACCESS.2024.3476123" target="_blank">DOI ↗</a>
+      </div>
+      <div class="year">2024</div>
+    </div>
+
+    <div class="card pub">
+      <div>
+        <h3>Improving Surge Voltage and Power Loss of the MOV-MOV-C Approach for Low-Scale DC Solid-State Circuit Breaker Applications</h3>
+        <p><b>IEEE Open Journal of the Industrial Electronics Society</b>, Vol. 6, pp. 708–721, 2025 · SCI(E)</p>
+        <p>DOI: 10.1109/OJIES.2025.3566146</p>
+        <a class="btn" href="https://ieeexplore.ieee.org/document/10981697" target="_blank">IEEE Xplore ↗</a>
+        <a class="btn" href="https://doi.org/10.1109/OJIES.2025.3566146" target="_blank">DOI ↗</a>
+      </div>
+      <div class="year">2025</div>
+    </div>
+
+    <div class="card pub">
+      <div>
+        <h3>Markov Model-Based Reliability Analysis of LED TVs on PFC Converters With Control Loop Effects</h3>
+        <p><b>IEEE Transactions on Consumer Electronics</b>, Vol. 72, No. 1, pp. 51–64, 2026 · SCI(E)</p>
+        <p>DOI: 10.1109/TCE.2025.3647669</p>
+        <a class="btn" href="https://scholarworks.gnu.ac.kr/handle/sw.gnu/82108" target="_blank">View Paper ↗</a>
+        <a class="btn" href="https://doi.org/10.1109/TCE.2025.3647669" target="_blank">DOI ↗</a>
+      </div>
+      <div class="year">2026</div>
+    </div>
+
+  </div>
+
+  <h3 style="margin:50px 0 15px;color:var(--accent)">Conference Papers</h3>
+  <div class="timeline">
+
+    <div class="card pub">
+      <div>
+        <h3>The Crowbar Clamping Circuit to Reduce the Surge Voltage in the DC Solid-State Circuit Breaker</h3>
+        <p><b>10th International Conference on Applied System Innovation (ICASI 2024)</b>, Kyoto, Japan, pp. 297–299.</p>
+        <p>DOI: 10.1109/ICASI60819.2024.10547838</p>
+        <a class="btn" href="https://scholarworks.gnu.ac.kr/item/4fb44e9f-1039-49a4-a4aa-bed2f2a9545b" target="_blank">View Paper ↗</a>
+        <a class="btn" href="https://doi.org/10.1109/ICASI60819.2024.10547838" target="_blank">DOI ↗</a>
+      </div>
+      <div class="year">2024</div>
+    </div>
+
+    <div class="card pub">
+      <div>
+        <h3>Reliability Analysis of Hybrid Power Conversion Systems by a Fault Tree Analysis Approach</h3>
+        <p><b>Power Electronics Society Conference (KIPE 2024)</b>, Jeju-do, South Korea, pp. 663–664.</p>
+        <a class="btn" href="https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11865645" target="_blank">View Paper ↗</a>
+        <a class="btn" href="https://conf2024s.kipe.or.kr/pdfs/output/PS1.85_%EC%86%8D%20%ED%8C%8C%EB%8B%9B.pdf" target="_blank">PDF ↗</a>
+      </div>
+      <div class="year">2024</div>
+    </div>
+
+    <div class="card pub">
+      <div>
+        <h3>Enhancing the MOV-MOV-C Approach to Reduce Power Loss and Surge Voltage in Low-Scale DC Solid-State Circuit Breakers</h3>
+        <p><b>KIEE Spring Conference – Electrical Equipment & Energy Conversion System Division</b>, Gangwon-do, South Korea, pp. 163–166.</p>
+        <p>Best Conference Paper Award</p>
+        <a class="btn" href="https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12253035" target="_blank">View Paper ↗</a>
+      </div>
+      <div class="year">2025</div>
+    </div>
+
+  </div>
+
+  <div class="card" style="margin-top:28px">
+    <h3>Publication Profile</h3>
+    <p>Additional research records can be found through the Gyeongsang National University ScholarWorks profile.</p>
+    <a class="btn" href="https://scholarworks.gnu.ac.kr/handle/sw.gnu/545" target="_blank">View ScholarWorks ↗</a>
+  </div>
+</div>
+</section>
+
+<section id="review">
+<div class="container">
+  <div class="section-title">
+    <h2>Peer Review Service</h2>
+    <p>Academic peer-review activities for IEEE journals and conferences in power electronics and related fields.</p>
+  </div>
+
+  <div class="timeline">
+
+    <div class="card pub">
+      <div>
+        <h3>IEEE Access — Peer Reviewer</h3>
+        <p><b>Manuscript:</b> “A Coreless Inductive-Based Snubber with Virtual Capacitance Reflection for Voltage Oscillation Suppression in High-Speed Converters”</p>
+        <p>Invited to review for <b>IEEE Access</b>. Review recognition requested through Web of Science.</p>
+        <span class="tag">Journal Reviewer</span>
+        <span class="tag">IEEE Access</span>
+      </div>
+      <div class="year">Review</div>
+    </div>
+
+    <div class="card pub">
+      <div>
+        <h3>IEEE Canadian Journal of Electrical and Computer Engineering — Peer Reviewer</h3>
+        <p><b>Manuscript ID:</b> CJECE-OA-2025-Nov-234</p>
+        <p><b>Title:</b> “Experimental Evaluation of Power Quality Impacts from Aggregated Residential LED Lamps under Grid and Generator Supply Conditions”</p>
+        <span class="tag">Journal Reviewer</span>
+        <span class="tag">IEEE CJECE</span>
+      </div>
+      <div class="year">Review</div>
+    </div>
+
+    <div class="card pub">
+      <div>
+        <h3>IEEE Industrial Electronics Society — Conference Peer Reviewer</h3>
+        <p><b>Conference:</b> PEMC26</p>
+        <p><b>Paper ID:</b> PEMC26-000029</p>
+        <p><b>Title:</b> “A Design Methodology for Active MOV-Based Snubbers in Electric Aircraft Solid-State Circuit Breakers”</p>
+        <p>Invited by Prof. Babak Nahid to review the conference paper. The review was submitted and the confirmation email provided a completed-review record.</p>
+        <span class="tag">Conference Reviewer</span>
+        <span class="tag">IEEE IES</span>
+        <span class="tag">PEMC26</span>
+      </div>
+      <div class="year">2026</div>
+    </div>
+
+  </div>
+
+  <div class="card" style="margin-top:28px">
+    <h3>Academic Service</h3>
+    <p>
+      Peer reviewer for IEEE journals and IEEE Industrial Electronics Society conference activities,
+      with review experience in power electronics, snubber circuits, solid-state circuit breakers,
+      and power-quality topics.
+    </p>
+  </div>
+</div>
+</section>
+
+<section id="patents">
+<div class="container">
+  <div class="section-title">
+    <h2>Patents & Awards</h2>
+    <p>Selected intellectual property and recognition from my engineering and research work.</p>
+  </div>
+
+  <h3 style="margin:35px 0 15px;color:var(--accent)">Patents</h3>
+  <div class="grid">
+    <div class="card">
+      <h3>Crowbar Clamping Circuit to Reduce Surge Voltage in the DC Solid-State Circuit Breaker</h3>
+      <p><b>Patent No. KR102810660B1</b> · Published · May 2025</p>
+      <p>Inventors: Phanit Sok, Feel-Soon Kang</p>
+      <a class="btn" href="https://patents.google.com/patent/KR102810660B1/en" target="_blank">View Patent ↗</a>
+    </div>
+
+    <div class="card">
+      <h3>Triple-MOV-C Snubber Circuit for Reducing Surge Voltage of DC Circuit Breaker</h3>
+      <p><b>Patent 2025-1-101-KR</b> · Pending · 2025</p>
+      <p>Inventors: Phanit Sok, Feel-Soon Kang</p>
+      <span class="tag">Pending — public patent page not located</span>
+    </div>
+  </div>
+
+  <h3 style="margin:50px 0 15px;color:var(--accent)">Awards</h3>
+  <div class="grid">
+    <div class="card"><h3>31st Young Pioneer Researcher Award</h3><p>Gyeongsang National University · 2025</p></div>
+    <div class="card"><h3>Best Conference Paper Award</h3><p>Korean Institute of Electrical Engineers (KIEE) · 2025</p></div>
+    <div class="card"><h3>Award for Excellent Academic Achievement</h3><p>National Institute for International Education (NIIED) · 2024</p></div>
+    <div class="card"><h3>Grade A — Cambodia National Exam</h3><p>Ministry of Education, Youth and Sport · 2016</p></div>
+    <div class="card"><h3>Top 7th Outstanding Physics Student</h3><p>National outstanding physics student examination · Cambodia · 2016</p></div>
+  </div>
+</div>
+</section>
+
+<section id="skills">
+<div class="container">
+  <div class="section-title"><h2>Technical Skills</h2><p>Tools and technologies used across hardware R&D and research.</p></div>
+  <div class="grid">
+    <div class="card"><h3>Simulation</h3><p>PSIM · TINA-TI · PSpice · LTspice · MATLAB</p></div>
+    <div class="card"><h3>Hardware</h3><p>Altium Designer · PCB Design · HV/LV AC/DC Sources · Electronic Load · Power Analyzer · Oscilloscope</p></div>
+    <div class="card"><h3>Protection</h3><p>OCP · OVP · DESAT · Short-Circuit · Fault Diagnosis · Hardware Validation</p></div>
+    <div class="card"><h3>Programming</h3><p>Python · C · DSP · Arduino IDE · MicroPython · MCU Programming</p></div>
+    <div class="card"><h3>AI</h3><p>Deep Learning · LSTM · Computer Vision · Image Classification · Jetson Nano</p></div>
+    <div class="card"><h3>Other</h3><p>SolidWorks · Electrical Panel Wiring · HV/LV/PLC Systems · Microsoft Office</p></div>
+  </div>
+</div>
+</section>
+
+<section id="education">
+<div class="container">
+  <div class="section-title"><h2>Education</h2><p>Mechatronic Engineering education in Thailand and South Korea.</p></div>
+  <div class="timeline">
+    <div class="item"><div class="date">2023 — 2025</div><div><h3>M.S. in Mechatronic Engineering</h3><div class="org">Gyeongsang National University · South Korea</div><p>GPA 4.43 / 4.5. Thesis: Analysis and Implementation of the Crowbar Clamping Circuit for Surge Voltage Reduction in the DC Solid-State Circuit Breaker.</p></div></div>
+    <div class="item"><div class="date">2018 — 2022</div><div><h3>B.S. in Mechatronic Engineering</h3><div class="org">Rajamangala University of Technology Thanyaburi · Thailand</div><p>GPA 3.88 / 4.0 · First-Class Honors.</p></div></div>
+  </div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+  <div class="section-title"><h2>Contact</h2><p>Open to engineering, R&D and power-electronics opportunities.</p></div>
+  <div class="contact">
+    <div class="contact-card"><h3>Email</h3><p><a href="mailto:sokphanith1008@gmail.com">sokphanith1008@gmail.com</a></p><p><a href="mailto:sokphanit@gnu.ac.kr">sokphanit@gnu.ac.kr</a></p></div>
+    <div class="contact-card"><h3>Professional Links</h3><p><a href="https://www.linkedin.com/in/phanit-sok-40b9a6369/" target="_blank">LinkedIn ↗</a></p><p><a href="https://github.com/SokPhanith" target="_blank">GitHub ↗</a></p></div>
+  </div>
+</div>
+</section>
+</main>
+
+<footer>
+  <div class="container">© 2026 SOK PHANIT · Mechatronic Engineer · Power Electronics & R&D</div>
+</footer>
+</body>
+</html>
