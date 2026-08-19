@@ -4,4 +4,15 @@ Personal portfolio website for SOK PHANIT — Mechatronic Engineer, Power Electr
 
 ## 🌐 Blog
 
-[**Visit my Blog →**]([https://your-blog-link.com](https://sokphanith.github.io/))
+[**Visit my Blog →**](https://sokphanith.github.io/)
+
+## 📄 Documents
+
+- [Resume](https://sokphanith.github.io/Resume.pdf)
+- [Portfolio](https://sokphanith.github.io/Portfolio.pdf)
+
+## 💻 GitHub Pages
+
+My personal portfolio website is available here:
+
+[**sokphanith.github.io →**](https://sokphanith.github.io/)
