@@ -53,13 +53,13 @@ section{padding:85px 0;border-top:1px solid rgba(159,178,201,.08)}
 .card p,.card li{color:var(--muted)}
 .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:15px}
 .tag{font-size:.76rem;border:1px solid #274564;color:#b9d7ee;border-radius:999px;padding:4px 9px}
-.timeline{display:grid;gap:16px}
+.timeline{display:grid;grid-template-columns:1fr;gap:18px;width:100%}
 .item{display:grid;grid-template-columns:180px 1fr;gap:30px;padding:24px 0;border-bottom:1px solid var(--line)}
 .item:last-child{border-bottom:0}
 .date{color:var(--accent);font-weight:700;font-size:.9rem}
 .item h3{margin:0 0 4px}.item .org{color:#dbe8f6;font-weight:600}
 .item ul{margin:12px 0 0;padding-left:18px}
-.pub{display:grid;grid-template-columns:1fr auto;gap:18px;align-items:start}
+.pub{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px;align-items:start;width:100%;box-sizing:border-box}
 .pub .year{color:var(--accent);font-weight:800}
 .contact{display:grid;grid-template-columns:1fr 1fr;gap:18px}
 .contact-card{padding:28px;border:1px solid var(--line);border-radius:var(--radius);background:var(--card)}
