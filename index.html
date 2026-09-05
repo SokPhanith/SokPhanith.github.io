@@ -82,12 +82,88 @@ footer{padding:35px 0;color:var(--muted);font-size:.85rem;text-align:center}
 </style>
 
 <style>
-/* FINAL IMAGE FIX: images are embedded in this HTML, so they do not depend on an assets folder. */
-.education-photo{width:240px;height:150px;object-fit:contain;object-position:center;border-radius:14px;border:1px solid var(--line);display:block;background:#fff;padding:6px;}
-.item-photo{width:240px;height:170px;object-fit:contain;object-position:center;border-radius:14px;border:1px solid var(--line);display:block;background:#fff;padding:4px;}
-.section-photo{width:100%;max-height:360px;object-fit:contain;object-position:center;border-radius:18px;border:1px solid var(--line);display:block;margin:0 0 28px;background:#fff;padding:4px;}
-@media(max-width:850px){.item-photo{height:220px;width:100%;}.education-photo{height:150px;width:100%;}}
+/* FINAL IMAGE FIX
+   - Keep the complete image visible: NO CROPPING.
+   - Keep the frame only slightly larger than the image.
+   - Do not stretch the image to the full section width.
+   - Images remain responsive on small screens.
+*/
+.education-photo{
+  width:240px;
+  height:150px;
+  object-fit:contain;
+  object-position:center;
+  border-radius:14px;
+  border:1px solid var(--line);
+  display:block;
+  background:#fff;
+  padding:6px;
+}
+
+.item-photo{
+  width:240px;
+  height:170px;
+  object-fit:contain;
+  object-position:center;
+  border-radius:14px;
+  border:1px solid var(--line);
+  display:block;
+  background:#fff;
+  padding:4px;
+}
+
+/* Important: natural/controlled image size instead of width:100%.
+   The image itself is the frame, so the frame follows the image. */
+.section-photo{
+  width:min(520px, 100%);
+  height:auto;
+  max-width:520px;
+  max-height:none;
+  object-fit:contain;
+  object-position:center;
+  border-radius:14px;
+  border:1px solid var(--line);
+  display:block;
+  margin:0 auto 28px;
+  background:#fff;
+  padding:5px;
+  box-sizing:border-box;
+}
+
+@media(max-width:850px){
+  .item-photo{
+    width:100%;
+    height:220px;
+  }
+  .education-photo{
+    width:100%;
+    height:150px;
+  }
+  .section-photo{
+    width:min(520px, 100%);
+    height:auto;
+    max-width:100%;
+    max-height:none;
+    margin-left:auto;
+    margin-right:auto;
+  }
+}
 </style>
+
+<style>
+/* Final override for section images: preserve aspect ratio and prevent cropping. */
+img.section-photo{
+  width:min(520px, 100%);
+  height:auto;
+  max-width:520px;
+  max-height:none;
+  object-fit:contain;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+</style>
+
 </head>
 <body>
 
