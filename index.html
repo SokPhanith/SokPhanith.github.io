@@ -55,6 +55,11 @@ section{padding:85px 0;border-top:1px solid rgba(159,178,201,.08)}
 .tag{font-size:.76rem;border:1px solid #274564;color:#b9d7ee;border-radius:999px;padding:4px 9px}
 .timeline{display:grid;grid-template-columns:1fr;gap:18px;width:100%}
 .item{display:grid;grid-template-columns:180px 1fr;gap:30px;padding:24px 0;border-bottom:1px solid var(--line)}
+.item.has-image{grid-template-columns:180px minmax(0,1fr) 240px}
+.item-photo{width:100%;height:170px;object-fit:cover;border-radius:14px;border:1px solid var(--line);display:block;background:#fff}
+.project-photo{width:100%;height:180px;object-fit:cover;border-radius:12px;margin:-2px 0 18px;border:1px solid var(--line);display:block;background:#fff}
+.section-photo{width:100%;max-height:360px;object-fit:cover;border-radius:18px;border:1px solid var(--line);display:block;margin:0 0 28px;background:#fff}
+
 .item:last-child{border-bottom:0}
 .date{color:var(--accent);font-weight:700;font-size:.9rem}
 .item h3{margin:0 0 4px}.item .org{color:#dbe8f6;font-weight:600}
@@ -69,7 +74,7 @@ footer{padding:35px 0;color:var(--muted);font-size:.85rem;text-align:center}
  .hero{grid-template-columns:1fr;padding-top:75px}
  .grid{grid-template-columns:1fr 1fr}
  .links{display:none}
- .item{grid-template-columns:1fr;gap:5px}
+ .item,.item.has-image{grid-template-columns:1fr;gap:12px}.item-photo{height:220px}
  .contact{grid-template-columns:1fr}
 }
 @media(max-width:560px){.grid{grid-template-columns:1fr}h1{font-size:3.4rem}}
@@ -102,7 +107,6 @@ footer{padding:35px 0;color:var(--muted);font-size:.85rem;text-align:center}
     </div>
   </div>
   <div class="hero-card">
-    <div class="stat"><b>150 kW</b><span>Next-Generation<br>EV Inverter</span></div>
     <div class="stat"><b>4.43 / 4.5</b><span>M.S. GPA<br>Gyeongsang National University</span></div>
     <div class="stat"><b>3.88 / 4.0</b><span>B.S. GPA<br>First-Class Honors</span></div>
     <div class="stat"><b>SCI(E)</b><span>Journal Publications<br>& Patents</span></div>
@@ -115,6 +119,11 @@ footer{padding:35px 0;color:var(--muted);font-size:.85rem;text-align:center}
     <h2>About Me</h2>
     <p>Mechatronic Engineer specializing in power electronics, EV inverter hardware, PCB design, testing and reliability.</p>
   </div>
+
+   <div class="card" style="margin-bottom:28px">
+     <h3>Engineering Profile</h3>
+     <p>I am a Mechatronic Engineer from Cambodia with a strong background in power electronics, EV inverter hardware, PCB design, testing and reliability analysis. My academic journey was supported by scholarships in Thailand and South Korea, where I achieved First-Class Honors in my B.S. and a strong M.S. academic record. I have experience in SCI(E) publications, patents, conference papers, and research involving AI-based life prediction and computer vision. I am a practical, solution-oriented engineer who enjoys solving challenging hardware and engineering problems.</p>
+   </div>
 
   <div class="about-layout">
     <div class="card about-photo-card">
@@ -136,9 +145,9 @@ footer{padding:35px 0;color:var(--muted);font-size:.85rem;text-align:center}
 <div class="container">
   <div class="section-title"><h2>Education</h2><p>Mechatronic Engineering education in Thailand and South Korea.</p></div>
   <div class="timeline">
-    <div class="item"><div class="date">2023 — 2025</div><div><h3>M.S. in Mechatronic Engineering</h3><div class="org">Gyeongsang National University · South Korea</div><p>GPA 4.43 / 4.5. Thesis: Analysis and Implementation of the Crowbar Clamping Circuit for Surge Voltage Reduction in the DC Solid-State Circuit Breaker.</p></div></div>
-    <div class="item"><div class="date">2018 — 2022</div><div><h3>B.S. in Mechatronic Engineering</h3><div class="org">Rajamangala University of Technology Thanyaburi · Thailand</div><p>GPA 3.88 / 4.0 · First-Class Honors.</p></div></div>
-    <div class="item"><div class="date">2016</div><div><h3>High School</h3><div class="org">Bak Touk High School · Phnom Penh, Cambodia</div><p>Achieved Grade A in the Cambodia National Exam (BAC II).</p><p>Outstanding Physics Student: No. 1 in Phnom Penh and Top 7 nationwide.</p></div></div>
+    <div class="item has-image"><div class="date">2023 — 2025</div><div><h3>M.S. in Mechatronic Engineering</h3><div class="org">Gyeongsang National University · South Korea</div><p>GPA 4.43 / 4.5. Thesis: Analysis and Implementation of the Crowbar Clamping Circuit for Surge Voltage Reduction in the DC Solid-State Circuit Breaker.</p></div><img class="item-photo" src="assets/MS-Mechatronic-Engineering.jpg" alt="M.S. in Mechatronic Engineering"></div>
+    <div class="item has-image"><div class="date">2018 — 2022</div><div><h3>B.S. in Mechatronic Engineering</h3><div class="org">Rajamangala University of Technology Thanyaburi · Thailand</div><p>GPA 3.88 / 4.0 · First-Class Honors.</p></div><img class="item-photo" src="assets/BS-Mechatronic-Engineering.jpg" alt="B.S. in Mechatronic Engineering"></div>
+    <div class="item has-image"><div class="date">2016</div><div><h3>High School</h3><div class="org">Bak Touk High School · Phnom Penh, Cambodia</div><p>Achieved Grade A in the Cambodia National Exam (BAC II).</p><p>Outstanding Physics Student: No. 1 in Phnom Penh and Top 7 nationwide.</p></div><img class="item-photo" src="assets/High-School.jpg" alt="High school achievement"></div>
   </div>
 </div>
 </section>
@@ -147,7 +156,7 @@ footer{padding:35px 0;color:var(--muted);font-size:.85rem;text-align:center}
 <div class="container">
   <div class="section-title"><h2>Professional Experience</h2><p>Hands-on engineering roles from PCB development and laboratory research to EV inverter R&D.</p></div>
   <div class="timeline">
-    <div class="item">
+    <div class="item has-image">
       <div class="date">Oct 2025 — Present</div>
       <div><h3>R&D H/W Engineer</h3><div class="org">Hyowon PowerTech · Busan, South Korea</div>
         <ul>
@@ -159,8 +168,9 @@ footer{padding:35px 0;color:var(--muted);font-size:.85rem;text-align:center}
           <li>DPT-based switching and EV inverter power-loss analysis.</li>
         </ul>
       </div>
+      <img class="item-photo" src="assets/RD-HW-Engineer.jpg" alt="R&D H/W Engineer work">
     </div>
-    <div class="item">
+    <div class="item has-image">
       <div class="date">Aug 2023 — Aug 2025</div>
       <div><h3>Full-Time Researcher</h3><div class="org">Power Electronics & Reliability Lab · Gyeongsang National University</div>
         <ul>
@@ -170,8 +180,9 @@ footer{padding:35px 0;color:var(--muted);font-size:.85rem;text-align:center}
           <li>Developed AI-based life prediction using LSTM and programmed DSP/MCUs.</li>
         </ul>
       </div>
+      <img class="item-photo" src="assets/Full-Time-Researcher.jpg" alt="Full-Time Researcher work">
     </div>
-    <div class="item">
+    <div class="item has-image">
       <div class="date">Jul 2021 — Nov 2021</div>
       <div><h3>Junior PCB Design Intern</h3><div class="org">Survitech Co., Ltd. · Thailand</div>
         <ul>
@@ -180,6 +191,7 @@ footer{padding:35px 0;color:var(--muted);font-size:.85rem;text-align:center}
           <li>Programmed microcontrollers using Arduino IDE and MicroPython.</li>
         </ul>
       </div>
+      <img class="item-photo" src="assets/Junior-PCB-Design-Intern.png" alt="Junior PCB Design Intern work">
     </div>
   </div>
 </div>
@@ -202,6 +214,7 @@ footer{padding:35px 0;color:var(--muted);font-size:.85rem;text-align:center}
 <section id="projects">
 <div class="container">
   <div class="section-title"><h2>Projects</h2><p>Selected engineering and research projects.</p></div>
+  <img class="section-photo" src="assets/Projects-Total-one-picture.png" alt="Selected engineering projects and hardware development">
   <div class="grid">
     <div class="card"><h3>150 kW Next-Generation EV Inverter</h3><p>HV EV inverter development with hardware/software integration, advanced protection, diagnostics and low-loss SiC switching.</p><div class="tags"><span class="tag">EV Inverter</span><span class="tag">SiC</span><span class="tag">Protection</span><span class="tag">H/W</span></div></div>
     <div class="card"><h3>DC Solid-State Circuit Breaker</h3><p>Voltage-clamping and surge-voltage reduction research using MOV-based protection and crowbar clamping circuits.</p><div class="tags"><span class="tag">SSCB</span><span class="tag">MOV</span><span class="tag">Thyristor</span><span class="tag">PCB</span></div></div>
@@ -404,6 +417,7 @@ footer{padding:35px 0;color:var(--muted);font-size:.85rem;text-align:center}
   </div>
 
   <h3 style="margin:50px 0 15px;color:var(--accent)">Awards</h3>
+  <img class="section-photo" src="assets/Awards-Total-one-picture.png" alt="Awards and achievements">
   <div class="grid">
     <div class="card"><h3>31st Young Pioneer Researcher Award</h3><p>Gyeongsang National University · 2025</p></div>
     <div class="card"><h3>Best Conference Paper Award</h3><p>Korean Institute of Electrical Engineers (KIEE) · 2025</p></div>
@@ -418,7 +432,7 @@ footer{padding:35px 0;color:var(--muted);font-size:.85rem;text-align:center}
 <div class="container">
   <div class="section-title"><h2>Contact</h2><p>Open to engineering, R&D and power-electronics opportunities.</p></div>
   <div class="contact">
-    <div class="contact-card"><h3>Email</h3><p><a href="mailto:sokphanith1008@gmail.com">sokphanith1008@gmail.com</a></p><p><a href="mailto:sokphanit@gnu.ac.kr">sokphanit@gnu.ac.kr</a></p></div>
+    <div class="contact-card"><h3>Email</h3><p><a href="mailto:sokphanith1008@gmail.com">sokphanith1008@gmail.com</a></p><p><a href="mailto:sokphanit@gnu.ac.kr">sokphanit@gnu.ac.kr</a></p><h3 style="margin-top:22px">Phone</h3><p><a href="tel:+8201023989810">+82 010 2398-9810</a></p></div>
     <div class="contact-card"><h3>Professional Links</h3><p><a href="https://www.linkedin.com/in/phanit-sok-40b9a6369/" target="_blank">LinkedIn ↗</a></p><p><a href="https://github.com/SokPhanith" target="_blank">GitHub ↗</a></p></div>
   </div>
 </div>
