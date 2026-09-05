@@ -96,7 +96,7 @@ footer{padding:35px 0;color:var(--muted);font-size:.85rem;text-align:center}
   border-radius:14px;
   border:1px solid var(--line);
   display:block;
-  background:#fff;
+  background:var(--card);
   padding:6px;
 }
 
@@ -108,7 +108,7 @@ footer{padding:35px 0;color:var(--muted);font-size:.85rem;text-align:center}
   border-radius:14px;
   border:1px solid var(--line);
   display:block;
-  background:#fff;
+  background:var(--card);
   padding:4px;
 }
 
@@ -125,7 +125,7 @@ footer{padding:35px 0;color:var(--muted);font-size:.85rem;text-align:center}
   border:1px solid var(--line);
   display:block;
   margin:0 auto 28px;
-  background:#fff;
+  background:var(--card);
   padding:5px;
   box-sizing:border-box;
 }
@@ -161,6 +161,33 @@ img.section-photo{
   display:block;
   margin-left:auto;
   margin-right:auto;
+}
+</style>
+
+
+<style>
+/* MATCH ABOUT ME CARD FRAME */
+.education-photo,
+.item-photo,
+.section-photo{
+  background:var(--card) !important;
+  border-color:var(--line);
+}
+
+/* Keep the complete image visible — never crop or stretch it. */
+.education-photo,
+.item-photo{
+  object-fit:contain !important;
+}
+
+img.section-photo{
+  object-fit:contain !important;
+  width:min(520px, 100%);
+  height:auto;
+  max-width:520px;
+  max-height:none;
+  padding:5px;
+  box-sizing:border-box;
 }
 </style>
 
