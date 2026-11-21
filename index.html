@@ -3,227 +3,72 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="SOK PHANIT — Mechatronic Engineer specializing in power electronics, EV inverter R&D, hardware design, PCB design, protection circuits, testing and AI-based fault diagnosis.">
-<meta name="robots" content="index, follow, max-image-preview:large">
+
+<!-- Basic SEO -->
+<title>SOK PHANIT | Mechatronic Engineer | EV Inverter &amp; Power Electronics R&amp;D</title>
+<meta name="description" content="Official portfolio of SOK PHANIT, a Mechatronic Engineer specializing in power electronics, high-voltage electric vehicle inverters, PCB and hardware design, protection circuits, testing, reliability, and AI-based fault diagnosis.">
+<meta name="author" content="SOK PHANIT">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="googlebot" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#07111f">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="canonical" href="https://sokphanith.github.io/">
+
+<!-- Open Graph: previews when the website is shared -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="SOK PHANIT | Mechatronic Engineer">
-<meta property="og:description" content="Mechatronic Engineer specializing in power electronics, EV inverter R&D, hardware design, PCB design, protection circuits, testing and AI.">
+<meta property="og:site_name" content="SOK PHANIT">
+<meta property="og:title" content="SOK PHANIT | Mechatronic Engineer | EV Inverter &amp; Power Electronics R&amp;D">
+<meta property="og:description" content="Explore the engineering portfolio of SOK PHANIT: EV inverter hardware, power electronics, PCB design, protection circuits, hardware testing, reliability, and AI.">
 <meta property="og:url" content="https://sokphanith.github.io/">
+<meta property="og:image" content="https://sokphanith.github.io/assets/profile.jpg">
+<meta property="og:image:alt" content="SOK PHANIT - Mechatronic Engineer">
+<meta property="og:locale" content="en_US">
+
+<!-- X/Twitter preview -->
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SOK PHANIT | Mechatronic Engineer">
-<meta name="twitter:description" content="Mechatronic Engineer specializing in power electronics, EV inverter R&D, hardware design, PCB design, protection circuits, testing and AI.">
-<title>SOK PHANIT | Mechatronic Engineer</title>
+<meta name="twitter:description" content="Power Electronics, EV Inverter R&amp;D, PCB Design, Hardware Testing and AI.">
+<meta name="twitter:image" content="https://sokphanith.github.io/assets/profile.jpg">
+
+<!-- Structured data: helps search engines understand this personal portfolio -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "SOK PHANIT",
   "url": "https://sokphanith.github.io/",
+  "image": "https://sokphanith.github.io/assets/profile.jpg",
   "jobTitle": "Mechatronic Engineer",
-  "description": "Mechatronic Engineer specializing in power electronics, EV inverter R&D, hardware design, PCB design, protection circuits, testing and AI-based fault diagnosis.",
+  "description": "Mechatronic Engineer specializing in power electronics, high-voltage electric vehicle inverters, hardware and PCB design, protection circuits, hardware testing, reliability analysis, and AI-based fault diagnosis.",
+  "alumniOf": [
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Gyeongsang National University"
+    },
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Rajamangala University of Technology Thanyaburi"
+    }
+  ],
   "sameAs": [
     "https://github.com/SokPhanith",
     "https://www.linkedin.com/in/phanit-sok-40b9a6369/"
   ],
   "knowsAbout": [
+    "Mechatronic Engineering",
     "Power Electronics",
     "Electric Vehicle Inverters",
+    "Motor Drives",
     "PCB Design",
-    "Hardware Testing",
+    "Hardware Design",
     "Protection Circuits",
-    "Mechatronics",
+    "Hardware Testing",
+    "Reliability Engineering",
     "Artificial Intelligence"
   ]
 }
 </script>
-<style>
-:root{
-  --bg:#07111f; --bg2:#0b1728; --card:#0e1d31; --line:#1d3552;
-  --text:#eef5ff; --muted:#9fb2c9; --accent:#62d8ff; --accent2:#8b7cff;
-  --max:1160px; --radius:18px;
-}
-*{box-sizing:border-box;scroll-behavior:smooth}
-body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:linear-gradient(180deg,var(--bg),#091727 55%,#07111f);color:var(--text);line-height:1.65}
-a{color:inherit;text-decoration:none}
-.container{width:min(var(--max),92%);margin:auto}
-nav{position:sticky;top:0;z-index:20;background:rgba(7,17,31,.86);backdrop-filter:blur(16px);border-bottom:1px solid rgba(98,216,255,.12)}
-.navin{display:flex;align-items:center;justify-content:space-between;min-height:70px}
-.logo{font-weight:800;letter-spacing:.12em}
-.logo span{color:var(--accent)}
-.links{display:flex;gap:22px;font-size:.9rem;color:var(--muted)}
-.links a:hover{color:var(--accent)}
-.hero{padding:105px 0 85px;display:grid;grid-template-columns:1.25fr .75fr;gap:55px;align-items:center}
-.kicker{color:var(--accent);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.78rem}
-h1{font-size:clamp(3rem,7vw,5.8rem);line-height:.98;margin:16px 0 20px;letter-spacing:-.055em}
-.hero h2{font-size:1.25rem;color:#d8e6f7;font-weight:500;margin:0 0 24px}
-.hero p{color:var(--muted);max-width:720px;font-size:1.05rem}
-.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
-.btn{padding:12px 18px;border:1px solid var(--line);border-radius:999px;font-weight:700;font-size:.92rem}
-.btn.primary{background:var(--accent);color:#04101c;border-color:var(--accent)}
-.btn:hover{transform:translateY(-1px)}
-.profile-photo{
-  width:210px;height:260px;object-fit:cover;object-position:center top;
-  border-radius:20px;border:1px solid var(--line);
-  display:block;margin:0 auto 24px;
-  background:#fff;
-}
-.about-layout{display:grid;grid-template-columns:240px 1fr;gap:28px;align-items:start}
-.about-photo-card{text-align:center}
-@media(max-width:850px){.about-layout{grid-template-columns:1fr}.profile-photo{width:180px;height:225px}}
-.hero-card{background:linear-gradient(145deg,#10243d,#0a1728);border:1px solid var(--line);border-radius:26px;padding:28px;box-shadow:0 25px 70px rgba(0,0,0,.25)}
-.stat{display:flex;justify-content:space-between;padding:17px 0;border-bottom:1px solid var(--line)}
-.stat:last-child{border-bottom:0}
-.stat b{font-size:1.35rem}.stat span{color:var(--muted);text-align:right}
-section{padding:85px 0;border-top:1px solid rgba(159,178,201,.08)}
-.section-title{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:30px}
-.section-title h2{font-size:2.2rem;margin:0;letter-spacing:-.03em}
-.section-title p{margin:0;color:var(--muted);max-width:560px}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.card{background:rgba(14,29,49,.78);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
-.card h3{margin:0 0 8px;font-size:1.12rem}
-.card p,.card li{color:var(--muted)}
-.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:15px}
-.tag{font-size:.76rem;border:1px solid #274564;color:#b9d7ee;border-radius:999px;padding:4px 9px}
-.timeline{display:grid;grid-template-columns:1fr;gap:18px;width:100%}
-.item{display:grid;grid-template-columns:180px 1fr;gap:30px;padding:24px 0;border-bottom:1px solid var(--line)}
-.item.has-image{grid-template-columns:180px minmax(0,1fr) 240px}
-.item-photo{width:100%;height:170px;object-fit:cover;border-radius:14px;border:1px solid var(--line);display:block;background:#fff}
-.education-photo{width:100%;height:150px;object-fit:contain;border-radius:14px;border:1px solid var(--line);display:block;background:#fff;padding:6px}
-.project-photo{width:100%;height:180px;object-fit:cover;border-radius:12px;margin:-2px 0 18px;border:1px solid var(--line);display:block;background:#fff}
-.section-photo{width:100%;max-height:360px;object-fit:cover;border-radius:18px;border:1px solid var(--line);display:block;margin:0 0 28px;background:#fff}
 
-.item:last-child{border-bottom:0}
-.date{color:var(--accent);font-weight:700;font-size:.9rem}
-.item h3{margin:0 0 4px}.item .org{color:#dbe8f6;font-weight:600}
-.item ul{margin:12px 0 0;padding-left:18px}
-.pub{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px;align-items:start;width:100%;box-sizing:border-box}
-.pub .year{color:var(--accent);font-weight:800}
-.contact{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-.contact-card{padding:28px;border:1px solid var(--line);border-radius:var(--radius);background:var(--card)}
-.contact-card a{color:var(--accent)}
-footer{padding:35px 0;color:var(--muted);font-size:.85rem;text-align:center}
-@media(max-width:850px){
- .hero{grid-template-columns:1fr;padding-top:75px}
- .grid{grid-template-columns:1fr 1fr}
- .links{display:none}
- .item,.item.has-image{grid-template-columns:1fr;gap:12px}.item-photo{height:220px}.education-photo{height:150px}
- .contact{grid-template-columns:1fr}
-}
-@media(max-width:560px){.grid{grid-template-columns:1fr}h1{font-size:3.4rem}}
-</style>
-
-<style>
-/* FINAL IMAGE FIX
-   - Keep the complete image visible: NO CROPPING.
-   - Keep the frame only slightly larger than the image.
-   - Do not stretch the image to the full section width.
-   - Images remain responsive on small screens.
-*/
-.education-photo{
-  width:240px;
-  height:150px;
-  object-fit:contain;
-  object-position:center;
-  border-radius:14px;
-  border:1px solid var(--line);
-  display:block;
-  background:var(--card);
-  padding:6px;
-}
-
-.item-photo{
-  width:240px;
-  height:170px;
-  object-fit:contain;
-  object-position:center;
-  border-radius:14px;
-  border:1px solid var(--line);
-  display:block;
-  background:var(--card);
-  padding:4px;
-}
-
-/* Important: natural/controlled image size instead of width:100%.
-   The image itself is the frame, so the frame follows the image. */
-.section-photo{
-  width:min(520px, 100%);
-  height:auto;
-  max-width:520px;
-  max-height:none;
-  object-fit:contain;
-  object-position:center;
-  border-radius:14px;
-  border:1px solid var(--line);
-  display:block;
-  margin:0 auto 28px;
-  background:var(--card);
-  padding:5px;
-  box-sizing:border-box;
-}
-
-@media(max-width:850px){
-  .item-photo{
-    width:100%;
-    height:220px;
-  }
-  .education-photo{
-    width:100%;
-    height:150px;
-  }
-  .section-photo{
-    width:min(520px, 100%);
-    height:auto;
-    max-width:100%;
-    max-height:none;
-    margin-left:auto;
-    margin-right:auto;
-  }
-}
-</style>
-
-<style>
-/* Final override for section images: preserve aspect ratio and prevent cropping. */
-img.section-photo{
-  width:min(520px, 100%);
-  height:auto;
-  max-width:520px;
-  max-height:none;
-  object-fit:contain;
-  display:block;
-  margin-left:auto;
-  margin-right:auto;
-}
-</style>
-
-
-<style>
-/* MATCH ABOUT ME CARD FRAME */
-.education-photo,
-.item-photo,
-.section-photo{
-  background:var(--card) !important;
-  border-color:var(--line);
-}
-
-/* Keep the complete image visible — never crop or stretch it. */
-.education-photo,
-.item-photo{
-  object-fit:contain !important;
-}
-
-img.section-photo{
-  object-fit:contain !important;
-  width:min(520px, 100%);
-  height:auto;
-  max-width:520px;
-  max-height:none;
-  padding:5px;
-  box-sizing:border-box;
-}
-</style>
-
-</head>
 <body>
 
 <nav>
